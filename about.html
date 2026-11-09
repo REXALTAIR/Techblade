@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechFix Solutions - About Us</title>
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
-
     <header>
         <nav>
-            <div class="logo">
-                <a href="index.html">Tech<span>Fix</span> Solutions</a>
-            </div>
+            <div class="logo"><a href="index.html">Tech<span>Fix</span> Solutions</a></div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active">About Us</a></li>
@@ -42,8 +39,9 @@
         </div>
     </section>
 
-    <section class="section" style="background-color: #eaf0f6; max-width: 100%; padding: 60px 30px;">
-        <div style="max-width: 1100px; margin: 0 auto;">
+    <!-- Changed background to soft gray to break up the white -->
+    <section class="section" style="background-color: var(--section-alt-bg); max-width: 100%; padding: 60px 5%;">
+        <div style="max-width: 1400px; margin: 0 auto;">
             <h2>Our Core Values</h2>
             <p class="section-subtitle">The principles that guide everything we do.</p>
             <div class="cards-grid">
@@ -73,9 +71,21 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 TechFix Solutions. All rights reserved.</p>
         <p>📍 Mandaue City &nbsp; | &nbsp; 📞 (02) 123-4567 &nbsp; | &nbsp; ✉️ contact@techfix.com</p>
+        <p>&copy; 2026 TechFix Solutions. All rights reserved.</p>
     </footer>
 
+    <button id="backToTop" title="Go to top">↑</button>
+    <script>
+        window.onscroll = function() {
+            const btn = document.getElementById("backToTop");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btn.style.display = "block";
+            } else { btn.style.display = "none"; }
+        };
+        document.getElementById("backToTop").addEventListener("click", function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
