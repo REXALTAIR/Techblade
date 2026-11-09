@@ -147,16 +147,19 @@ footer p { opacity: 0.8; }
   max-width: 1240px;
   margin: 0 auto 30px;
   padding: 0 32px;
+  text-align: center; 
 }
 
 .reviews-heading h2 {
   margin: 0;
+  font-size: 2rem; 
   color: var(--primary-color); 
 }
 
 .reviews-heading p {
   color: #666779;
   margin-top: 10px;
+  font-size: 1.05rem; 
 }
 
 .review-window {
