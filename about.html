@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
+
     <header>
         <nav>
-            <div class="logo"><a href="index.html">Tech<span>Fix</span> Solutions</a></div>
+            <div class="logo">
+                <a href="index.html">Tech<span>Fix</span> Solutions</a>
+            </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active">About Us</a></li>
@@ -34,12 +37,11 @@
                 <p>To empower individuals and businesses through reliable technology solutions, delivered with honesty, speed, and care.</p>
             </div>
             <div class="about-image">
-                <div class="placeholder-img">📷 [c:\Users\tamay\Downloads\handsome-young-man-live-streaming-tech-tutorial-with-smartphone-computer-technician-recording-video-his-followers-showing-hard-drive.jpg]</div>
+                <img src="Repair.jpg" alt="TechFix Solutions workshop" class="about-img">
             </div>
         </div>
     </section>
 
-    <!-- Changed background to soft gray to break up the white -->
     <section class="section" style="background-color: var(--section-alt-bg); max-width: 100%; padding: 60px 5%;">
         <div style="max-width: 1400px; margin: 0 auto;">
             <h2>Our Core Values</h2>
@@ -71,8 +73,8 @@
     </section>
 
     <footer>
-        <p>📍 Mandaue City &nbsp; | &nbsp; 📞 (02) 123-4567 &nbsp; | &nbsp; ✉️ contact@techfix.com</p>
         <p>&copy; 2026 TechFix Solutions. All rights reserved.</p>
+        <p>📍 Mandaue City &nbsp; | &nbsp; 📞 (02) 123-4567 &nbsp; | &nbsp; ✉️ contact@techfix.com</p>
     </footer>
 
     <button id="backToTop" title="Go to top">↑</button>
@@ -81,7 +83,9 @@
             const btn = document.getElementById("backToTop");
             if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
                 btn.style.display = "block";
-            } else { btn.style.display = "none"; }
+            } else {
+                btn.style.display = "none";
+            }
         };
         document.getElementById("backToTop").addEventListener("click", function() {
             window.scrollTo({ top: 0, behavior: 'smooth' });

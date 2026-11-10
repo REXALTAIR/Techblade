@@ -164,3 +164,18 @@ footer p { opacity: 0.8; }
     display: none; z-index: 1000; transition: var(--transition);
 }
 #backToTop:hover { background-color: #d35400; transform: translateY(-5px); }
+
+.about-img {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 4 / 4; 
+    object-fit: cover; 
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.about-img:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-hover);
+}
