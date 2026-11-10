@@ -168,7 +168,7 @@ footer p { opacity: 0.8; }
 .about-img {
     width: 100%;
     max-width: 500px;
-    aspect-ratio: 4 / 4; 
+    aspect-ratio: 4 / 3; 
     object-fit: cover; 
     border-radius: 16px;
     box-shadow: var(--shadow);
