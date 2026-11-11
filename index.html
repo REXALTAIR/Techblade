@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechFix Solutions - Home</title>
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
     <header>
@@ -25,24 +25,49 @@
     </section>
 
     <section class="section">
-        <div class="split-section">
-            <div class="split-content">
-                <h2>Why Choose TechFix?</h2>
-                <p style="font-size: 1.1rem; color: #555; margin-bottom: 20px;">We deliver quality service with a personal touch. Whether you are a student with a broken laptop or a business needing a network setup, we treat your device like our own.</p>
-                <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 15px;">
-                    <li style="display: flex; align-items: center; gap: 10px;"><span style="color: var(--accent-color); font-size: 1.5rem;">⚡</span> <strong>Fast Turnaround:</strong>&nbsp;Most repairs done in 24-48 hours.</li>
-                    <li style="display: flex; align-items: center; gap: 10px;"><span style="color: var(--accent-color); font-size: 1.5rem;">💰</span> <strong>Affordable Pricing:</strong>&nbsp;Student-friendly rates, no hidden fees.</li>
-                    <li style="display: flex; align-items: center; gap: 10px;"><span style="color: var(--accent-color); font-size: 1.5rem;">🛡️</span> <strong>Warranty Guaranteed:</strong>&nbsp;30-day service warranty on all fixes.</li>
-                </ul>
+        <h2>How It Works</h2>
+        <p class="section-subtitle">Getting your device fixed is easy and stress-free.</p>
+        <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+            <div class="card" style="border-top: 4px solid var(--accent-color);">
+                <div class="card-icon">📦</div>
+                <h3>1. Bring In Your Device</h3>
+                <p>Drop off your laptop, PC, or gadget at our shop, or schedule a convenient pick-up.</p>
             </div>
-            <div class="split-visual">
-                <div class="split-box">🛠️</div>
+            <div class="card" style="border-top: 4px solid var(--accent-color);">
+                <div class="card-icon">🔍</div>
+                <h3>2. We Diagnose the Problem</h3>
+                <p>Our expert technicians run a thorough, free diagnostic to find the exact issue and provide a quote.</p>
+            </div>
+            <div class="card" style="border-top: 4px solid var(--accent-color);">
+                <div class="card-icon">✅</div>
+                <h3>3. Get It Back Working</h3>
+                <p>We fix it fast, test it thoroughly, and return your device in perfect, like-new condition.</p>
             </div>
         </div>
     </section>
 
-    <section class="section" style="background-color: var(--section-alt-bg); max-width: 100%; padding: 40px 1%;">
-        <div style="max-width: 2000px; margin: 0 auto;">
+    <section class="section" style="background-color: var(--section-alt-bg); max-width: 100%; padding: 60px 5%;">
+        <div style="max-width: 1400px; margin: 0 auto;">
+            <div class="split-section">
+                <div class="split-content">
+                    <h2>Why Choose TechFix?</h2>
+                    <p style="font-size: 1.1rem; color: #555; margin-bottom: 20px;">We deliver quality service with a personal touch. Whether you are a student with a broken laptop or a business needing a network setup, we treat your device like our own.</p>
+                    <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 15px;">
+                        <li style="display: flex; align-items: center; gap: 10px;"><span style="color: var(--accent-color); font-size: 1.5rem;">⚡</span> <strong>Fast Turnaround:</strong>&nbsp;Most repairs done in 24-48 hours.</li>
+                        <li style="display: flex; align-items: center; gap: 10px;"><span style="color: var(--accent-color); font-size: 1.5rem;">💰</span> <strong>Affordable Pricing:</strong>&nbsp;Student-friendly rates, no hidden fees.</li>
+                        <li style="display: flex; align-items: center; gap: 10px;"><span style="color: var(--accent-color); font-size: 1.5rem;">🛡️</span> <strong>Warranty Guaranteed:</strong>&nbsp;30-day service warranty on all fixes.</li>
+                    </ul>
+                </div>
+
+                <div class="split-visual">
+                    <img src="repair.jpg" alt="TechFix Solutions workshop" class="about-img" style="max-width: 500px; height: 350px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background-color: var(--light-bg); max-width: 100%; padding: 60px 5%;">
+        <div style="max-width: 1400px; margin: 0 auto;">
             <h2>Our Top Services</h2>
             <p class="section-subtitle">From hardware fixes to software solutions — we've got you covered.</p>
             <div class="cards-grid">
@@ -65,53 +90,54 @@
         </div>
     </section>
 
-    <section class="reviews" id="reviews" aria-labelledby="reviews-title">
+    <section class="reviews" id="reviews">
         <div class="reviews-heading">
-            <h2 id="reviews-title">Real feedback from our customers.</h2>
+            <h2>Real feedback from our customers.</h2>
             <p>See what our clients say about our TechFix services.</p>
         </div>
         <div class="review-window">
             <div class="review-track">
                 <div class="review-group">
                     <article class="review-card">
-                        <div><span class="review-stars">★★★★★</span><p class="review-text">“My System had a virus and they fully removed it in a hour!”</p></div>
+                        <div><span class="review-stars">★★★★★</span><p class="review-text">“My System had a virus and they fully removed it in an hour!”</p></div>
                         <p class="review-by">Jerry S. · Verified Customer</p>
                     </article>
                     <article class="review-card">
-                        <div><span class="review-stars">★★★★☆</span><p class="review-text">“ My Pc was slow before now it runs faster now than when I first bought it.”</p></div>
+                        <div><span class="review-stars">★★★★☆</span><p class="review-text">“My PC was slow before, now it runs faster than when I first bought it.”</p></div>
                         <p class="review-by">Thragg F. · Verified Customer</p>
                     </article>
                     <article class="review-card">
                         <div><span class="review-stars">★★★★★</span><p class="review-text">“I can run Minecraft with 1500fps now :D.”</p></div>
-                        <p class="review-by">Steve M⛏️. · Verified Customer</p>
+                        <p class="review-by">Steve M. · Verified Customer</p>
                     </article>
                     <article class="review-card">
-                        <div><span class="review-stars">★★★☆☆</span><p class="review-text">“Great service and friendly staff. I wish I had brought my Gauntlet to TechFix sooner.”</p></div>
+                        <div><span class="review-stars">★★★☆☆</span><p class="review-text">“Great service and friendly staff. I wish I had brought my device to TechFix sooner.”</p></div>
                         <p class="review-by">Thanos G. · Verified Customer</p>
                     </article>
                 </div>
-                <div class="review-group" aria-hidden="true">
+                <div class="review-group">
                     <article class="review-card">
                         <div><span class="review-stars">★★★★★</span><p class="review-text">“My laptop screen was completely cracked, and they fixed it in just four hours. It looks brand new!”</p></div>
                         <p class="review-by">Nina C. · Verified Customer</p>
                     </article>
                     <article class="review-card">
                         <div><span class="review-stars">★★★★☆</span><p class="review-text">“Simply Lovely.”</p></div>
-                        <p class="review-by">Max Verstappen🏆. · Verified Customer</p>
+                        <p class="review-by">Max V. · Verified Customer</p>
                     </article>
                     <article class="review-card">
-                        <div><span class="review-stars">★★★★★</span><p class="review-text">“They gave a quick look at my network now it doesn't lag good stuff.”</p></div>
-                        <p class="review-by">Yusuf tuz · Verified Customer</p>
+                        <div><span class="review-stars">★★★★★</span><p class="review-text">“They gave a quick look at my network, now it doesn't lag. Good stuff.”</p></div>
+                        <p class="review-by">Yusuf T. · Verified Customer</p>
                     </article>
                     <article class="review-card">
-                        <div><span class="review-stars">★★★☆☆</span><p class="review-text">“Aries FIX MY PHONE😡😡😭🙏🏻.”</p></div>
-                        <p class="review-by">Kratos . · Verified Customer</p>
+                        <div><span class="review-stars">★★★☆☆</span><p class="review-text">“Fast and reliable. My phone works perfectly again.”</p></div>
+                        <p class="review-by">Kratos · Verified Customer</p>
                     </article>
                 </div>
             </div>
         </div>
     </section>
- <section class="section" style="background-color: var(--primary-color); color: white; max-width: 100%; padding: 30px 1%;">
+
+    <section class="section" style="background-color: var(--primary-color); color: white; max-width: 100%; padding: 60px 5%;">
         <div style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 30px; text-align: center;">
             <div>
                 <h3 style="font-size: 3rem; color: var(--accent-color); margin-bottom: 10px; font-weight: 800;">1000+</h3>
@@ -131,6 +157,7 @@
             </div>
         </div>
     </section> 
+
     <section class="cta-section">
         <h2>Ready to Fix Your Tech Problems?</h2>
         <p>Visit us today or send us a message. We're here to help!</p>
@@ -138,6 +165,7 @@
     </section>
 
     <footer>
+        <p>📍 Mandaue City &nbsp; | &nbsp; 📞 (02) 123-4567 &nbsp; | &nbsp; ✉️ contact@techfix.com</p>
         <p>&copy; 2026 TechFix Solutions. All rights reserved.</p>
     </footer>
 
